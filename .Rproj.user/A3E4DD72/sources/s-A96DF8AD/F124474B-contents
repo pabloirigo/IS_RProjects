@@ -96,7 +96,7 @@ initialize.problem = function(){
   problem$upWall = upWall
   problem$downWall = downWall
   problem$leftWall = leftWall
-  problem&rightWall = rightWall
+  problem$rightWall = rightWall
   return(problem)
 }
 
@@ -104,7 +104,8 @@ initialize.problem = function(){
 # Must return TRUE or FALSE according with if the action can be done or not
 # over the specific state
 is.applicable = function (state,action,problem){
-  result = FALSE
+  result = F
+  action <- action$action
   
   #Going UP
   if (action == "Up" && upWall(state) == "true"){

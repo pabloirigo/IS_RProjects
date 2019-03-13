@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1552478366807.000,
+    "dirty" : true,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "EC2452A6",
+    "lastKnownWriteTime" : 1526472612,
+    "last_content_update" : 1552478476197,
+    "path" : "D:/4ºIng.Infor/2o_Semestre/IntelligentSystems/RLabs/Teamwork-R-master/Sudoku/problems/problema-sudoku-SI05.R",
+    "project_path" : null,
+    "properties" : {
+        "cursorPosition" : "49,25",
+        "scrollLine" : "32"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
