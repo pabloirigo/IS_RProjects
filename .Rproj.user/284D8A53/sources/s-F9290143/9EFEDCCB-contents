@@ -34,7 +34,7 @@ source("../TheFeetMaze/problems/problem template.R")
 #source("../methods/YYYYYYYYYYY.R")
 
 # And here, there are additional (needed) functions
-source("../TheFeetMaze/methods/Breath_First_Search.R")
+source("../TheFeetMaze/methods/Breadth_First_Search.R")
 source("../TheFeetMaze/methods/Analyze_Results.R")
 source("../TheFeetMaze/methods/Depth_First_Search.R")
 # =======================================================================

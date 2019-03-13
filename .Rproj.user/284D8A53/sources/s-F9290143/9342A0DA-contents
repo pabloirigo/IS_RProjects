@@ -30,13 +30,13 @@ library(ggplot2)
 library(gridExtra)
 
 # ADDITIONAL FUNCTIONS (add any used method/problem here)
-source("../TheFeetMaze/problems/problem template.R")
+source("../The Feet Maze/problems/problem template.R")
 #source("../methods/YYYYYYYYYYY.R")
 
 # And here, there are additional (needed) functions
-source("../TheFeetMaze/methods/Breadth_First_Search.R")
-source("../TheFeetMaze/methods/Analyze_Results.R")
-source("../TheFeetMaze/methods/Depth_First_Search.R")
+source("../The Feet Maze/methods/Breadth_First_Search.R")
+source("../The Feet Maze/methods/Analyze_Results.R")
+source("../The Feet Maze/methods/Depth_First_Search.R")
 # =======================================================================
 # Check the proper operation of implemented function here!
 
@@ -45,8 +45,8 @@ source("../TheFeetMaze/methods/Depth_First_Search.R")
 # =======================================================================
 # Solving of the problem (you have to adapt it)
 #problem   = initialize.problem("<ANY_PARAMETER_IF_NEEDED>")
-res1 = method.Breath_First_Search(problem)
-res2 = method.Depth_Frist_Search(problem)
+res1 = methods.Breadth_First_Search(problem)
+res2 = methods.Depth_Frist_Search(problem)
 all = list(res1, res2)
 analyze.results(list(res1,res2),problem)
 
