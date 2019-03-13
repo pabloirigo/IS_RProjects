@@ -92,7 +92,11 @@ initialize.problem = function(){
   problem$state.final   = c(1,7)
   problem$actions.possible =data.frame(direction=c("Up","Down","Rigth","Left"),cost=1)
   problem$name = "The Feet Maze"
-  # problem$<aditional info> = <Insert code here>
+  problem$matrix = x
+  problem$upWall = upWall
+  problem$downWall = downWall
+  problem$leftWall = leftWall
+  problem&rightWall = rightWall
   return(problem)
 }
 
@@ -102,16 +106,16 @@ initialize.problem = function(){
 is.applicable = function (state,action,problem){
   result = FALSE
   
-  if (action == "Up"){
+  if (action == "Up" && upWall(state) == "true"){
     result = row!=1
   }
-  if (action == "Down"){
+  if (action == "Down" && downWall(state) == "true"){
     result = row!=problem$rows
   }
-  if (action == "Left"){
+  if (action == "Left" && leftWall(state) == "true"){
     result = col!=1
   }
-  if (action == "Right"){
+  if (action == "Right"  && rightWall(state) == "true"){
     result = col!=problem$columns
   }
   # <insert code here in order to calculate result value>
@@ -124,22 +128,22 @@ effect = function (state,action){
   result = state
   i<-integer()
   
-  if (action == "Up" && upWall(state) == "true"){
+  if (action == "Up" ){
     result[row-1,col] = state[row,col]
     result[row,col] = state[row-1,col]
     i+1
   }
-  if (action == "Down" && downWall(state) == "true"){
+  if (action == "Down" ){
     result[row+1,col] = state[row,col]
     result[row,col] = state[row+1,col]
     i+1
   } 
-  if (action == "Left" && leftWall(state) == "true"){
+  if (action == "Left" ){
     result[row,col-1] = state[row,col]
     result[row,col] = state[row,col-1]
     i+1
   }
-  if (action == "Right" && rightWall(state) == "true"){
+  if (action == "Right"){
     result[row,col+1] = state[row,col]
     result[row,col] = state[row,col+1]
     i+1
@@ -183,6 +187,7 @@ get.cost = function (action,state){
 # (Used for Informed Algorithms)
 # Heuristic function used in Informed algorithms
 get.evaluation = function(state,problem){
+  
   return(1)
 }
 

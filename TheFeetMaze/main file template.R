@@ -30,13 +30,13 @@ library(ggplot2)
 library(gridExtra)
 
 # ADDITIONAL FUNCTIONS (add any used method/problem here)
-source("../problems/XXXXXXXXXX.R")
-source("../methods/YYYYYYYYYYY.R")
+source("../problems/problem template.R")
+#source("../methods/YYYYYYYYYYY.R")
 
 # And here, there are additional (needed) functions
-source("../methods/Expand Node.R")
-source("../methods/Analyze Results.R")
-source("../methods/Plot Results.R")
+source("../methods/Breath_First_Search.R")
+source("../methods/Analyze_Results.R")
+source("../methods/Depth_First_Search.R")
 # =======================================================================
 # Check the proper operation of implemented function here!
 
@@ -45,8 +45,8 @@ source("../methods/Plot Results.R")
 # =======================================================================
 # Solving of the problem (you have to adapt it)
 #problem   = initialize.problem("<ANY_PARAMETER_IF_NEEDED>")
-res1 = method.XXXX(problem,"<OTHER_PARAMETERS>")
-res2 = method.YYYY(problem,"<OTHER_PARAMETERS>")
+res1 = method.Breath_First_Search(problem)
+res2 = method.Depth_Frist_Search(problem)
 all = list(res1, res2)
 analyze.results(list(res1,res2),problem)
 
