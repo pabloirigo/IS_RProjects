@@ -110,7 +110,7 @@ is.applicable = function (state,action,problem){
   action <- action$action
   
   #Going UP
-  if (action == "Up" && upWall(state[row,colum]) == T &&  (state[row,col] != state[row-1,col]) && row>1){
+  if (action == "Up" && upWall(state) == T &&  (state[row,col] != state[row-1,col]) && row>1){
     
       result = row!=1
     

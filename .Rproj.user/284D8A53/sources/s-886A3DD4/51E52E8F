@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "3070418481",
+    "hash" : "1267792995",
     "id" : "51E52E8F",
-    "lastKnownWriteTime" : 1552480759,
-    "last_content_update" : 1552480759913,
+    "lastKnownWriteTime" : 1552481877,
+    "last_content_update" : 1552481877042,
     "path" : "C:/Users/luist/Desktop/UNI/3º/2 semestre/S.Inteliegentes/Projects/IS_RProjects/TheFeetMaze/problems/problem template.R",
     "project_path" : "TheFeetMaze/problems/problem template.R",
     "properties" : {
-        "cursorPosition" : "114,21",
-        "scrollLine" : "90"
+        "cursorPosition" : "90,23",
+        "scrollLine" : "79"
     },
     "relative_order" : 2,
     "source_on_save" : false,
