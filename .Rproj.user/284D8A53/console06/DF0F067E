@@ -1,0 +1,43 @@
+[0m[0K]0;:/c/Users/luist/Desktop/UNI/3º/2 semestre/S.Inteliegentes/Projects/IS_RProjects[?25l
+[0;32mluist@LuisPC [0;35m [0;33m~/Desktop/UNI/3º/2 semestre/S.Inteliegentes/Projects/IS_RProjects[0;36m[0K
+(master)[0m[0K
+$[0K[3G[?25h[?25l[2A[0;32mluist@LuisPC [0;35m [0;33m~/Desktop/UNI/3º/2 semestre/S.Inteliegentes/Projects/IS_RProjects[0;36m (master)[0K
+[0m$[0K
+[0K[1A[3G[?25h[?25l$ g[0K
+[0K[1A[4G[?25h[?25l$ gi[0K
+[0K[1A[5G[?25h[?25l$ git[0K
+[0K[1A[6G[?25h[7G[?25l$ git p[0K
+[0K[1A[8G[?25h[?25l$ git pu[0K
+[0K[1A[9G[?25h[?25l$ git pul[0K
+[0K[1A[10G[?25h[?25l$ git pull[0K
+[0K[1A[11G[?25h[?25l
+[?25hremote: Enumerating objects: 37, done.[0K[?25l
+remote: Counting objects: 100% (37/37), done.[0K
+remote: Compressing objects:   8% (1/12)[0K[1A[42G[?25h[?25l
+remote: Compressing objects: 100% (12/12), done.[0K
+[0K[?25hremote: Total 21 (delta 8), reused 21 (delta 8), pack-reused 0[0K[?25l
+[0K[?25h[?25lUnpacking objects:  19% (4/21)[0K[1G[?25h[?25lUnpacking objects:  33% (7/21)[0K[1G[?25h[?25lUnpacking objects:  47% (10/21)[0K[1G[?25h[?25lUnpacking objects:  61% (13/21)[0K[1G[?25h[?25lUnpacking objects:  85% (18/21)[0K[1G[?25hUnpacking objects: 100% (21/21), done.[0K[?25l
+[0K[?25hFrom https://github.com/pabloirigo/IS_RProjects[0K[?25l
+   f38b37f..ef9c793  master     -> origin/master[0K
+[0K[?25hUpdating f38b37f..ef9c793[0K[?25l
+Fast-forward[0K
+[0K[?25h .Rproj.user/A3E4DD72/console06/AFE75FD5            |   5 [0;32m+[0m[0K[?25l
+ .Rproj.user/A3E4DD72/console06/INDEX001            |   2 [0;32m+[0;31m-[0m[0K
+ .Rproj.user/A3E4DD72/sources/prop/6645A930         |   4 [0;32m+[0m[0K
+ .Rproj.user/A3E4DD72/sources/prop/8D49E224         |   2 [0;32m+[0;31m-[0m[0K
+ .Rproj.user/A3E4DD72/sources/prop/94218352         |   4 [0;32m+[0;31m-[0m[0K
+ .Rproj.user/A3E4DD72/sources/prop/INDEX            |   1 [0;32m+[0m[0K
+ .Rproj.user/A3E4DD72/sources/s-A96DF8AD/682BCC82   |   2 [0;32m+[0;31m-[0m[0K
+ .Rproj.user/A3E4DD72/sources/s-A96DF8AD/EC2452A6   |  22 [0;32m+++[0m[0K
+ .../A3E4DD72/sources/s-A96DF8AD/EC2452A6-contents  | 212 [0;32m+++++++++++++++++++++[0m[0K
+ .Rproj.user/A3E4DD72/sources/s-A96DF8AD/F124474B   |  10 [0;32m+[0;31m-[0m[0K
+ .../A3E4DD72/sources/s-A96DF8AD/F124474B-contents  |   5 [0;32m+[0;31m-[0m[0K
+ TheFeetMaze/problems/problem template.R            |   5 [0;32m+[0;31m-[0m[0K
+ 12 files changed, 260 insertions(+), 14 deletions(-)[0K
+ create mode 100644 .Rproj.user/A3E4DD72/console06/AFE75FD5[0K
+ create mode 100644 .Rproj.user/A3E4DD72/sources/prop/6645A930[0K
+ create mode 100644 .Rproj.user/A3E4DD72/sources/s-A96DF8AD/EC2452A6[0K
+ create mode 100644 .Rproj.user/A3E4DD72/sources/s-A96DF8AD/EC2452A6-contents[0K
+[0K[?25h[?25l
+[0;32mluist@LuisPC [0;35m [0;33m~/Desktop/UNI/3º/2 semestre/S.Inteliegentes/Projects/IS_RProjects[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git p[0K[?25h[?25l$ git[0K[8G[?25h[7G[?25l$ git a[0K[?25hd[0Kd[0K[11G[?25l$ git add .[0K[?25h

@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1552477502218.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "E1CDB9B8",
+    "lastKnownWriteTime" : 1552477064,
+    "last_content_update" : 1552477064,
+    "path" : "C:/Users/luist/Desktop/UNI/3º/2 semestre/S.Inteliegentes/Projects/IS_RProjects/TheFeetMaze/methods/Depth_First_Search.R",
+    "project_path" : "TheFeetMaze/methods/Depth_First_Search.R",
+    "properties" : {
+        "cursorPosition" : "9,7",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
