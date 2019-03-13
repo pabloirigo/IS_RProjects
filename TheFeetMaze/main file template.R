@@ -1,7 +1,7 @@
 # =======================================================================
-# Names:
-# Group Number: 
-# Assignment:
+# Names:Luis Urrechaga, Pablo Irigoyen  
+# Group Number: B
+# Assignment:TheFeetMaze  
 # Date:
 # =======================================================================
 # 1. Be sure to include, with this template, any necessary files
@@ -44,7 +44,7 @@ source("../TheFeetMaze/methods/Depth_First_Search.R")
 
 # =======================================================================
 # Solving of the problem (you have to adapt it)
-#problem   = initialize.problem("<ANY_PARAMETER_IF_NEEDED>")
+problem   = initialize.problem("<ANY_PARAMETER_IF_NEEDED>")
 res1 = method.Breath_First_Search(problem)
 res2 = method.Depth_Frist_Search(problem)
 all = list(res1, res2)
