@@ -86,12 +86,10 @@ upWall
 # (Depending on the problem, it should receive or not parameters)
 initialize.problem = function(){
   problem = list()
-  
-  problem$state.initial = x[nrow=7,ncolum=1]
-  problem$state.initial
+  problem$state.initial = x(7,1)
   problem$columns = ncol(x)
   problem$row = nrow(x)
-  problem$state.final   = x[1,7]
+  problem$state.final   = x(1,7)
   problem$actions.possible =data.frame(direction=c("Up","Down","Rigth","Left"),cost=1)
   problem$name = "The Feet Maze"
   problem$matrix = x
@@ -110,10 +108,10 @@ is.applicable = function (state,action,problem){
   action <- action$action
   
   #Going UP
-  if (action == "Up" && upWall(state) == T &&  (state[row,col] != state[row-1,col]) && row>1){
-    
+  if (action == "Up" && upWall(state) == T && (state[row,col] != state[row-1,col]) && row>1){
+    if(upWall(state) == "true" && state[row, col] != state[row-1, col] && row=!1){
       result = row!=1
-    
+    }
   }
   
   #Going Down
