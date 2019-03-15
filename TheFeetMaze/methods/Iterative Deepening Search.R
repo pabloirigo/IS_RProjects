@@ -1,10 +1,11 @@
-Breadth.First.Search = function(problem,
-                                count.limit = 100, 
-                                count.print = 100, 
-                                trace = FALSE, 
-                                graph.search = FALSE){
+Iterative.Deepening.Search = function(problem,
+                                      count.limit=100, 
+                                      count.print = 100, 
+                                      trace = FALSE, 
+                                      graph.search = FALSE,
+                                      depth.limit = 10){
   
-  name.method = paste0("Breadth First Search", ifelse(graph.search," + GS",""))
+  name.method = paste0("Iterative Deepening Search ",depth.limit, ifelse(graph.search," + GS",""))
   state.initial    = problem$state.initial
   state.final      = problem$state.final
   actions.possible = problem$actions.possible
@@ -13,9 +14,9 @@ Breadth.First.Search = function(problem,
               state=state.initial,
               actions=c(),
               depth=0,
-			        cost=0)
+              cost=0)
   frontier = list(node)
-
+  
   if (graph.search){
     expanded = list()     
   }
@@ -26,19 +27,31 @@ Breadth.First.Search = function(problem,
                       depth.of.expanded=numeric(),
                       nodes.added.frontier=numeric())
   
-  
+  depth.current = 1
   while (count<=count.limit){
+    
     if (count%%count.print==0){
       print(paste0("Count: ",count,", Nodes in the frontier: ",length(frontier)), quote = F)
     }
     
     if (length(frontier)==0){
-      end.reason = "Frontier"
-      break
+      if (depth.current<depth.limit){
+        depth.current = depth.current + 1
+        node = list(parent=c(),
+                    state=state.initial,
+                    actions=c(),
+                    depth=0,
+                    cost=0)
+        frontier = list(node)
+        expanded = list() 
+      }else{
+        end.reason = "Frontier"
+        break
+      }
     }
-    
-    firstnode = frontier[[1]]
-    frontier[[1]] = NULL
+    # We only change here with regards to BFS
+    firstnode = frontier[[length(frontier)]]
+    frontier[[length(frontier)]] = NULL
     if(graph.search){
       expanded = append(expanded,list(firstnode))
     }
@@ -59,17 +72,20 @@ Breadth.First.Search = function(problem,
     newnodes = expand.node(firstnode, actions.possible)
     
     if (!graph.search){
-		  frontier = c(frontier,newnodes)
-  		nodes.added.frontier = length(newnodes)
-  		if (length(newnodes)){
-    		for (i in 1:length(newnodes)){
-    			newnode = newnodes[[i]]		  
-    			if (trace){
-    			  print(paste0("State added to frontier: - (depth=",newnode$depth,", cost=",newnode$depth,")"),quote = F)
-    			  to.string(newnode$state)
-    			}
-    		}
-  		}
+      nodes.added.frontier = 0
+      if (length(newnodes)){
+        for (i in 1:length(newnodes)){
+          newnode = newnodes[[i]]
+          if (newnode$depth <= depth.current){
+            frontier = append(frontier,list(newnode))
+            nodes.added.frontier = nodes.added.frontier + 1
+            if (trace){
+              print(paste0("State added to frontier: - (depth=",newnode$depth,", cost=",newnode$depth,")"),quote = F)
+              to.string(newnode$state)
+            }
+          }
+        }
+      }
     }else{
       nodes.added.frontier = 0
       if (length(newnodes)){
@@ -77,12 +93,14 @@ Breadth.First.Search = function(problem,
           newnode = newnodes[[i]]
           if (!any(sapply(frontier,function (x) identical(x$state,newnode$state)))){
             if (!any(sapply(expanded,function (x) identical(x$state,newnode$state)))){
-        				frontier = append(frontier,list(newnode))
-        				nodes.added.frontier = nodes.added.frontier + 1
+              if (newnode$depth <= depth.current){
+                frontier = append(frontier,list(newnode))
+                nodes.added.frontier = nodes.added.frontier + 1
                 if (trace){
                   print(paste0("State added to frontier: - (depth=",newnode$depth,", cost=",newnode$depth,")"),quote = F)
                   to.string(newnode$state)
                 }
+              }
             }
           }
         }
@@ -106,7 +124,7 @@ Breadth.First.Search = function(problem,
   result = list()
   result$report = report
   result$name = name.method
-
+  
   # Show the obtained (or not) final solution
   if (end.reason == "Sollution"){
     print("Solution found!!", quote = F)
@@ -120,7 +138,7 @@ Breadth.First.Search = function(problem,
     } else{
       print("Maximum Number of iterations reached. No sollution found", quote = F)
     }
-      result$state.final = NA
+    result$state.final = NA
   }
   
   plot.results(report,name.method,problem)
