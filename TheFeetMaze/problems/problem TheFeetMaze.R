@@ -29,13 +29,18 @@
 initialize.problem = function(file, fileUp, fileDown, fileRight, fileLeft){
   
   problem = list()
-  problem$map = read.delim(file, header = F)
-  problem$map_Up = read.delim(fileUp, header = F)
-  problem$map_Down = read.delim(fileDown, header = F)
-  problem$map_Right = read.delim(fileRight, header = F)
-  problem$map_Left = read.delim(fileLeft, header = F)
-  problem$state.initial = c(1, 7)
-  problem$state.final = c(7, 1)
+  #problem$map = read.delim(file, header = F)
+  problem$map = read.csv(file, header = F)
+  #problem$map_Up = read.delim(fileUp, header = F)
+  problem$map_Up = read.csv(fileUp, header = F)
+  #problem$map_Down = read.delim(fileDown, header = F)
+  problem$map_Down = read.csv(fileDown, header = F)
+  #problem$map_Right = read.delim(fileRight, header = F)
+  problem$map_Right = read.csv(fileRight, header = F)
+  #problem$map_Left = read.delim(fileLeft, header = F)
+  problem$map_Left = read.csv(fileLeft, header = F)
+  problem$state.initial = c(7, 1)
+  problem$state.final = c(1, 7)
   problem$state = problem$state.initial
   problem$actions.possible = data.frame(direction=c("Up", "Down", "Right", "Left"), stringsAsFactors = F)
   problem$name = "TheFeetMaze"
@@ -54,43 +59,43 @@ is.applicable = function (state,action,problem){
   
   
   #Action Up
-  if (action == "Up" && state[[row]]>1){
+  if (action == "Up" && row>1){
     #Checking if in the map_Up there is a F in that position, in that case there is a wall above
-    if(problem$map_Up[[row]][column] == "T"){
+    if(problem$map_Up[[row]][column] == T){
       #If the one above is not the same type("R" or "L"), it can move -> opposite foot
       result = !(problem$map[[row]][column] == problem$map[[row-1]][column])
     }
   }
   
   #Action Down
-  if (action == "Down" && state[[row]]<7){
+  if (action == "Down" && row<7){
     #Checking if in the map_Down there is a F in that position, in that case there is a wall above
-    if(problem$map_Down[[row]][column] == "T"){
+    if(problem$map_Down[[row]][column] == T){
       #If the one under is not the same type("R" or "L"), it can move -> opposite foot
       result = !(problem$map[[row]][column] == problem$map[[row+1]][column])
     }
   }
   
   #Action Right
-  if (action == "Right"){
+  if (action == "Right" && column<7){
     #Checking if in the map_Right there is a F in that position, in that case there is a wall above
-    if(problem$map_Right[[row]][column] == "T"){
+    if(problem$map_Right[[row]][column] == T){
       #If the one to the right is not the same type("R" or "L"), it can move -> opposite foot
       result = !(problem$map[[row]][column] == problem$map[[row]][column+1])
     }
   }
   
   #Action Left
-  if (action == "Left"){
+  if (action == "Left" && column>1){
     #Checking if in the map_Left there is a F in that position, in that case there is a wall above
-    if(problem$map_Left[[row]][column] == "T"){
+    if(problem$map_Left[[row]][column] == T){
       #If the one to the left is not the same type("R" or "L"), it can move -> opposite foot
       result = !(problem$map[[row]][column] == problem$map[[row]][column-1])
     }
   }
   
   # <insert code here in order to calculate result value>
-  print(result)
+  #print(result)
   return(result)
 }
 
@@ -101,6 +106,7 @@ effect = function (state,action){
   pos = which(state == problem$state, arr.ind = TRUE)
   row = pos[1]
   column = pos[2]
+  result = state
   
   #Going Up
   if (action == "Up" ){
@@ -123,7 +129,7 @@ effect = function (state,action){
   }
   
   # <insert code here in order to modify the resulting state> 
-  print(result)
+  #print(result)
   return(result)
 }
 
@@ -166,4 +172,3 @@ get.evaluation = function(state,problem){
   
   return(1)
 }
-
