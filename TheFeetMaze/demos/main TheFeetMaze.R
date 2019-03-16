@@ -46,7 +46,8 @@ source("../methods/Plot Results.R")
 
 # =======================================================================
 # Solving of the problem (you have to adapt it)
-problem = initialize.problem("../data/map.txt", "../data/map_Up.txt", "../data/map_Down.txt", "../data/map_Right.txt", "../data/map_Left.txt")
+#problem = initialize.problem("../data/map.txt", "../data/map_Up.txt", "../data/map_Down.txt", "../data/map_Right.txt", "../data/map_Left.txt")
+problem = initialize.problem("../data/map.csv", "../data/map_Up.csv", "../data/map_Down.csv", "../data/map_Right.csv", "../data/map_Left.csv")
 print(problem)
 res1 = Breadth.First.Search(problem, count.limit = 1000, graph.search = T) 
 res2 = Depth.First.Search(problem,count.limit = 10000, graph.search = T)
