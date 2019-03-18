@@ -61,36 +61,36 @@ is.applicable = function (state,action,problem){
   #Action Up
   if (action == "Up" && row>1){
     #Checking if in the map_Up there is a F in that position, in that case there is a wall above
-    if(problem$map_Up[[row]][column] == T){
+    if(problem$map_Up[[column]][row] == T){
       #If the one above is not the same type("R" or "L"), it can move -> opposite foot
-      result = !(problem$map[[row]][column] == problem$map[[row-1]][column])
+      result = !(problem$map[[column]][row] == problem$map[[column]][row-1])
     }
   }
   
   #Action Down
   if (action == "Down" && row<7){
     #Checking if in the map_Down there is a F in that position, in that case there is a wall above
-    if(problem$map_Down[[row]][column] == T){
+    if(problem$map_Down[[column]][row] == T){
       #If the one under is not the same type("R" or "L"), it can move -> opposite foot
-      result = !(problem$map[[row]][column] == problem$map[[row+1]][column])
+      result = !(problem$map[[column]][row] == problem$map[[column]][row+1])
     }
   }
   
   #Action Right
   if (action == "Right" && column<7){
     #Checking if in the map_Right there is a F in that position, in that case there is a wall above
-    if(problem$map_Right[[row]][column] == T){
+    if(problem$map_Right[[column]][row] == T){
       #If the one to the right is not the same type("R" or "L"), it can move -> opposite foot
-      result = !(problem$map[[row]][column] == problem$map[[row]][column+1])
+      result = !(problem$map[[column]][row] == problem$map[[column+1]][row])
     }
   }
   
   #Action Left
   if (action == "Left" && column>1){
     #Checking if in the map_Left there is a F in that position, in that case there is a wall above
-    if(problem$map_Left[[row]][column] == T){
+    if(problem$map_Left[[column]][row] == T){
       #If the one to the left is not the same type("R" or "L"), it can move -> opposite foot
-      result = !(problem$map[[row]][column] == problem$map[[row]][column-1])
+      result = !(problem$map[[column]][row] == problem$map[[column-1]][row])
     }
   }
   
