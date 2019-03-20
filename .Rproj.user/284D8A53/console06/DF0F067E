@@ -156,4 +156,153 @@ error: unable to index file .Rproj.user/284D8A53/console06/DF0F067E[0K
 fatal: updating files failed[0K
 [0K[?25h[?25l
 [0;32mluist@LuisPC [0;35m [0;33m~/Desktop/UNI/3º/2 semestre/S.Inteliegentes/Projects/IS_RProjects[0;36m (master)[0m[0K
-$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git a[0K[?25hd[0Kd[0K[11G[?25l$ git add .[0K[?25h
+$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git a[0K[?25hd[0Kd[0K[11G[?25l$ git add .[0K[?25hwarning: LF will be replaced by CRLF in .Rproj.user/284D8A53/sources/prop/43BD7EE8.[0K[?25l
+The file will have its original line endings in your working directory[0K
+warning: LF will be replaced by CRLF in .Rproj.user/284D8A53/sources/prop/8B0D525F.[0K
+The file will have its original line endings in your working directory[0K
+warning: LF will be replaced by CRLF in .Rproj.user/284D8A53/sources/prop/954DF3F8.[0K
+The file will have its original line endings in your working directory[0K
+warning: LF will be replaced by CRLF in .Rproj.user/284D8A53/sources/prop/B53AADC7.[0K
+The file will have its original line endings in your working directory[0K
+warning: LF will be replaced by CRLF in .Rproj.user/284D8A53/sources/prop/C35E9CFB.[0K
+The file will have its original line endings in your working directory[0K
+warning: LF will be replaced by CRLF in .Rproj.user/284D8A53/sources/prop/CA1F679.[0K
+The file will have its original line endings in your working directory[0K
+[0K[?25hwarning: LF will be replaced by CRLF in .Rproj.user/shared/notebooks/paths.[0K[?25l
+The file will have its original line endings in your working directory[0K
+warning: LF will be replaced by CRLF in .Rproj.user/284D8A53/sources/s-BA29EC54/11E5CD8B-contents.[0K
+The file will have its original line endings in your working directory[0K
+warning: LF will be replaced by CRLF in .Rproj.user/284D8A53/sources/s-BA29EC54/51E52E8F-contents.[0K
+The file will have its original line endings in your working directory[0K
+warning: LF will be replaced by CRLF in .Rproj.user/284D8A53/sources/s-BA29EC54/598CC8FD.[0K
+The file will have its original line endings in your working directory[0K
+warning: LF will be replaced by CRLF in .Rproj.user/284D8A53/sources/s-BA29EC54/6A0A8AA8.[0K
+The file will have its original line endings in your working directory[0K
+warning: LF will be replaced by CRLF in .Rproj.user/284D8A53/sources/s-BA29EC54/9EFEDCCB.[0K
+The file will have its original line endings in your working directory[0K
+warning: LF will be replaced by CRLF in .Rproj.user/284D8A53/sources/s-BA29EC54/E1CDB9B8-contents.[0K
+The file will have its original line endings in your working directory[0K
+[0K[?25h[?25l
+[0;32mluist@LuisPC [0;35m [0;33m~/Desktop/UNI/3º/2 semestre/S.Inteliegentes/Projects/IS_RProjects[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git -[0K[?25hm[0K[10G[?25l$ git -m c[0K[?25ho[0Km[0Km[0Ki[0Kt[0K[17G[16G[?25l$ git -m commi[0K[16G[?25h[15G[?25l$ git -m comm[0K[?25h[?25l$ git -m com[0K[?25h[?25l$ git -m c[0K[12G[?25h[11G[?25l$ git -m[0K[10G[?25h[9G[?25l$ git -[0K[?25h[?25l$ git[0K[7G[?25h[?25l$ git c[0K[?25ho[0Km[0Km[0Ki[0Kt[0K[14G[?25l$ git commit -[0K[?25hm[0K[17G[?25l$ git commit -m "[0K[?25h1[0K[?25l$ git commit -m "[0K[?25hp[0Ke[0K[?25l$ git commit -m "p[0K[?25hr[0Ki[0Km[0Ke[0Kr[0K"[0K[?25l
+[0K[?25h[master 14558b6] primer[0K[?25l
+ 33 files changed, 1150 insertions(+), 70 deletions(-)[0K
+ rewrite .Rproj.user/284D8A53/console06/INDEX001 (86%)[0K
+ delete mode 100644 .Rproj.user/284D8A53/sources/s-886A3DD4/11E5CD8B[0K
+ delete mode 100644 .Rproj.user/284D8A53/sources/s-886A3DD4/51E52E8F[0K
+ delete mode 100644 .Rproj.user/284D8A53/sources/s-886A3DD4/E1CDB9B8[0K
+ rename .Rproj.user/284D8A53/sources/{s-886A3DD4 => s-BA29EC54}/11E5CD8B-contents (100%)[0K
+ rename .Rproj.user/284D8A53/sources/{s-886A3DD4 => s-BA29EC54}/51E52E8F-contents (100%)[0K
+ rename .Rproj.user/284D8A53/sources/{s-886A3DD4 => s-BA29EC54}/598CC8FD (93%)[0K
+ rename .Rproj.user/284D8A53/sources/{s-886A3DD4 => s-BA29EC54}/598CC8FD-contents (100%)[0K
+ rename .Rproj.user/284D8A53/sources/{s-886A3DD4 => s-BA29EC54}/6A0A8AA8 (100%)[0K
+ rename .Rproj.user/284D8A53/sources/{s-886A3DD4 => s-BA29EC54}/6A0A8AA8-contents (100%)[0K
+ rename .Rproj.user/284D8A53/sources/{s-886A3DD4 => s-BA29EC54}/9EFEDCCB (100%)[0K
+ rename .Rproj.user/284D8A53/sources/{s-886A3DD4 => s-BA29EC54}/9EFEDCCB-contents (100%)[0K
+ rename .Rproj.user/284D8A53/sources/{s-886A3DD4 => s-BA29EC54}/CB8F1051 (100%)[0K
+ rename .Rproj.user/284D8A53/sources/{s-886A3DD4 => s-BA29EC54}/CB8F1051-contents (100%)[0K
+ rename .Rproj.user/284D8A53/sources/{s-886A3DD4 => s-BA29EC54}/E1CDB9B8-contents (100%)[0K
+ rename .Rproj.user/284D8A53/sources/{s-886A3DD4 => s-BA29EC54}/lock_file (100%)[0K
+ create mode 100644 The P-Hub/data/phub_10.txt[0K
+ create mode 100644 The P-Hub/data/phub_100.txt[0K
+ create mode 100644 The P-Hub/data/phub_20.txt[0K
+ create mode 100644 The P-Hub/data/phub_40.txt[0K
+ create mode 100644 The P-Hub/demos/main file template.R[0K
+ create mode 100644 The P-Hub/methods/Analyze Results.R[0K
+ create mode 100644 The P-Hub/methods/Breadth First Search.R[0K
+ create mode 100644 The P-Hub/methods/Depth First Search.R[0K
+ create mode 100644 The P-Hub/methods/Depth Limited Search.R[0K
+ create mode 100644 The P-Hub/methods/Expand Node.R[0K
+ create mode 100644 The P-Hub/methods/Greedy Best First Search.R[0K
+ create mode 100644 The P-Hub/methods/Iterative Deepening Search.R[0K
+ create mode 100644 The P-Hub/methods/Plot Results.R[0K
+ create mode 100644 The P-Hub/methods/Uniform Cost Search.R[0K
+ create mode 100644 The P-Hub/problems/problem template.R[0K
+[0K[?25h[?25l
+[0;32mluist@LuisPC [0;35m [0;33m~/Desktop/UNI/3º/2 semestre/S.Inteliegentes/Projects/IS_RProjects[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git p[0K[?25hu[0Ks[0Kh[0K[?25l
+[0K[?25hTo https://github.com/pabloirigo/IS_RProjects.git[0K[?25l
+ [0;31m! [rejected]       [0m master -> master (fetch first)[0K
+[0;31merror: failed to push some refs to 'https://github.com/pabloirigo/IS_RProjects.git'[0m[0K
+[0;33mhint: Updates were rejected because the remote contains work that you do[0m[0K
+[0;33mhint: not have locally. This is usually caused by another repository pushing[0m[0K
+[0;33mhint: to the same ref. You may want to first integrate the remote changes[0m[0K
+[0;33mhint: (e.g., 'git pull ...') before pushing again.[0m[0K
+[0;33mhint: See the 'Note about fast-forwards' in 'git push --help' for details.[0m[0K
+[0K[?25h[?25l
+[0;32mluist@LuisPC [0;35m [0;33m~/Desktop/UNI/3º/2 semestre/S.Inteliegentes/Projects/IS_RProjects[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git p[0K[?25hu[0Kl[0Kl[0Kç[0K[?25l$ git pull[0K[?25h[?25l
+[0K[?25hgit: 'pullÃ' is not a git command. See 'git --help'.[0K[?25l
+[0K[?25h[?25l
+[0;32mluist@LuisPC [0;35m [0;33m~/Desktop/UNI/3º/2 semestre/S.Inteliegentes/Projects/IS_RProjects[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git p[0K[?25hu[0Kl[0Kl[0K[?25l
+[0K[?25hremote: Enumerating objects: 40, done.[0K[?25l
+remote: Counting objects:  22% (9/40)[0K[41G[?25h[?25lremote: Counting objects: 100% (40/40), done.[0K
+remote: Compressing objects: 100% (14/14), done.[0K
+remote: Total 23 (delta 8), reused 22 (delta 7), pack-reused 0[0K
+Unpacking objects:  17% (4/23)[0K[1G[?25h[?25lUnpacking objects:  47% (11/23)[0K[1G[?25h[?25lUnpacking objects:  82% (19/23)[0K[1G[?25hUnpacking objects: 100% (23/23), done.[0K[?25l
+[0K[?25hFrom https://github.com/pabloirigo/IS_RProjects[0K[?25l
+   4fb1bf2..40e12fc  master     -> origin/master[0K
+[0K[?25hRemoving .Rproj.user/A3E4DD72/sources/s-45F3FE1B/lock_file[0K[?25l
+Removing .Rproj.user/A3E4DD72/sources/s-45F3FE1B/F124474B-contents[0K
+Removing .Rproj.user/A3E4DD72/sources/s-45F3FE1B/EC2452A6-contents[0K
+Removing .Rproj.user/A3E4DD72/sources/s-45F3FE1B/EC2452A6[0K
+[0K[?25hMerge made by the 'recursive' strategy.[0K[?25l
+[0K[?25h .Rhistory                                          |  50 [0;32m+++++[0m[0K[?25l
+ .Rproj.user/A3E4DD72/console06/AFE75FD5            |   2 [0;32m+[0;31m-[0m[0K
+ .Rproj.user/A3E4DD72/console06/INDEX001            |   2 [0;32m+[0;31m-[0m[0K
+ .Rproj.user/A3E4DD72/pcs/files-pane.pper           |   2 [0;32m+[0;31m-[0m[0K
+ .Rproj.user/A3E4DD72/pcs/source-pane.pper          |   2 [0;32m+[0;31m-[0m[0K
+ .Rproj.user/A3E4DD72/pcs/windowlayoutstate.pper    |   2 [0;32m+[0;31m-[0m[0K
+ .Rproj.user/A3E4DD72/sources/prop/6690D02C         |   4 [0;32m+[0m[0K
+ .Rproj.user/A3E4DD72/sources/prop/845E2049         |   4 [0;32m+[0m[0K
+ .Rproj.user/A3E4DD72/sources/prop/INDEX            |   2 [0;32m+[0m[0K
+ .Rproj.user/A3E4DD72/sources/s-45F3FE1B/EC2452A6   |  22 [0;31m---[0m[0K
+ .../A3E4DD72/sources/s-45F3FE1B/EC2452A6-contents  | 212 [0;31m---------------------[0m[0K
+ .../A3E4DD72/sources/s-45F3FE1B/F124474B-contents  | 203 [0;31m--------------------[0m[0K
+ .../{s-45F3FE1B/682BCC82 => s-FAA46533/7D9A6797}   |  16 [0;32m+[0;31m-[0m[0K
+ .../7D9A6797-contents}                             |  18 [0;32m+[0;31m-[0m[0K
+ .../{s-45F3FE1B/F124474B => s-FAA46533/8A3381F7}   |  16 [0;32m+[0;31m-[0m[0K
+ .../A3E4DD72/sources/s-FAA46533/8A3381F7-contents  | 174 [0;32m+++++++++++++++++[0m[0K
+ .../sources/{s-45F3FE1B => s-FAA46533}/lock_file   |   0[0K
+ .Rproj.user/shared/notebooks/paths                 |   3 [0;32m+[0;31m-[0m[0K
+ 18 files changed, 267 insertions(+), 467 deletions(-)[0K
+ create mode 100644 .Rproj.user/A3E4DD72/sources/prop/6690D02C[0K
+ create mode 100644 .Rproj.user/A3E4DD72/sources/prop/845E2049[0K
+ delete mode 100644 .Rproj.user/A3E4DD72/sources/s-45F3FE1B/EC2452A6[0K
+ delete mode 100644 .Rproj.user/A3E4DD72/sources/s-45F3FE1B/EC2452A6-contents[0K
+ delete mode 100644 .Rproj.user/A3E4DD72/sources/s-45F3FE1B/F124474B-contents[0K
+ rename .Rproj.user/A3E4DD72/sources/{s-45F3FE1B/682BCC82 => s-FAA46533/7D9A6797} (51%)[0K
+ rename .Rproj.user/A3E4DD72/sources/{s-45F3FE1B/682BCC82-contents => s-FAA46533/7D9A6797-contents} (71%)[0K
+ rename .Rproj.user/A3E4DD72/sources/{s-45F3FE1B/F124474B => s-FAA46533/8A3381F7} (50%)[0K
+ create mode 100644 .Rproj.user/A3E4DD72/sources/s-FAA46533/8A3381F7-contents[0K
+ rename .Rproj.user/A3E4DD72/sources/{s-45F3FE1B => s-FAA46533}/lock_file (100%)[0K
+[0K[?25h[?25l
+[0;32mluist@LuisPC [0;35m [0;33m~/Desktop/UNI/3º/2 semestre/S.Inteliegentes/Projects/IS_RProjects[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git .[0K[?25h[9G[?25l$ git . a[0K[?25hd[0Kd[0K[?25l
+[0K[?25hgit: '.' is not a git command. See 'git --help'.[0K[?25l
+[0K
+The most similar commands are[0K
+        am[0K
+        gc[0K
+        mv[0K
+        p4[0K
+        rm[0K
+[0K[?25h[?25l
+[0;32mluist@LuisPC [0;35m [0;33m~/Desktop/UNI/3º/2 semestre/S.Inteliegentes/Projects/IS_RProjects[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git .[0K[?25h[9G[?25l$ git . a[0K[?25hd[0Kd[0K[?25l
+[0K[?25hgit: '.' is not a git command. See 'git --help'.[0K[?25l
+[0K
+The most similar commands are[0K
+        am[0K
+        gc[0K
+        mv[0K
+        p4[0K
+        rm[0K
+[0K[?25h[?25l
+[0;32mluist@LuisPC [0;35m [0;33m~/Desktop/UNI/3º/2 semestre/S.Inteliegentes/Projects/IS_RProjects[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ f[0K[?25hi[0Kt[0K[7G[?25l$ fit a[0K[?25hd[0Kd[0K[11G[?25l$ fit add .[0K[?25h[?25l
+[0K[?25hbash: fit: command not found[0K[?25l
+[0K[?25h[?25l
+[0;32mluist@LuisPC [0;35m [0;33m~/Desktop/UNI/3º/2 semestre/S.Inteliegentes/Projects/IS_RProjects[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git a[0K[?25hd[0Kd[0K.[0K[?25l$ git add[0K[?25h[11G[?25l$ git add .[0K[?25h
