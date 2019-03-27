@@ -44,7 +44,6 @@ effect = function (state,action){
   return(result)
 }
 
-
 # =======================================================================
 is.final.state = function (state,finalstate){
   return(all(state==FALSE))

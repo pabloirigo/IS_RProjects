@@ -305,4 +305,52 @@ $[0K[3G[?25h[?25l$ f[0K[?25hi[0Kt[0K[7G[?25l$ fit a[0K[?25hd[0Kd
 [0K[?25hbash: fit: command not found[0K[?25l
 [0K[?25h[?25l
 [0;32mluist@LuisPC [0;35m [0;33m~/Desktop/UNI/3º/2 semestre/S.Inteliegentes/Projects/IS_RProjects[0;36m (master)[0m[0K
-$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git a[0K[?25hd[0Kd[0K.[0K[?25l$ git add[0K[?25h[11G[?25l$ git add .[0K[?25h
+$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git a[0K[?25hd[0Kd[0K.[0K[?25l$ git add[0K[?25h[11G[?25l$ git add .[0K[?25h[?25l
+[0K[?25h[?25l
+[0;32mluist@LuisPC [0;35m [0;33m~/Desktop/UNI/3º/2 semestre/S.Inteliegentes/Projects/IS_RProjects[0;36m (master)[0m[0K[14G[?25h[?25l
+$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git c[0K[?25ho[0Km[0Km[0Ki[0Kt[0K[14G[?25l$ git commit -[0K[?25hm[0K[17G[?25l$ git commit -m "[0K[?25hp[0Kr[0Ki[0Km[0Ke[0Kr[0K"[0K[?25l
+[0K[?25h[master b30f908] primer[0K[?25l
+ 1 file changed, 150 insertions(+), 1 deletion(-)[0K
+[0K[?25h[?25l
+[0;32mluist@LuisPC [0;35m [0;33m~/Desktop/UNI/3º/2 semestre/S.Inteliegentes/Projects/IS_RProjects[0;36m (master)[0m[0K[14G[?25h[?25l
+$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git p[0K[?25hu[0Kh[0K[?25l$ git pu[0K[?25hs[0Kh[0K[?25l
+[0K[?25hEnumerating objects: 50, done.[0K[?25l
+Counting objects: 100% (43/43), done.[0K
+Delta compression using up to 8 threads[0K
+Compressing objects:  53% (16/30)[0K[1G[?25hCompressing objects: 100% (30/30), done.[0K[?25l
+Writing objects: 100% (32/32), 51.08 KiB | 3.41 MiB/s, done.[0K
+Total 32 (delta 9), reused 0 (delta 0)[0K
+[0K[?25h[?25lremote: Resolving deltas:  88% (8/9)[0K[1G[?25hremote: Resolving deltas: 100% (9/9), completed with 4 local objects.[0K[?25l
+[0K[?25hTo https://github.com/pabloirigo/IS_RProjects.git[0K[?25l
+   40e12fc..b30f908  master -> master[0K
+[0K[?25h[?25l
+[0;32mluist@LuisPC [0;35m [0;33m~/Desktop/UNI/3º/2 semestre/S.Inteliegentes/Projects/IS_RProjects[0;36m (master)[0m[0K
+$[0K[3G[?25h[0m[0K]0;:/c/Users/luist/Desktop/UNI/3º/2 semestre/S.Inteliegentes/Projects/IS_RProjects[?25l
+[0;32mluist@LuisPC [0;35m [0;33m~/Desktop/UNI/3º/2 semestre/S.Inteliegentes/Projects/IS_RProjects[0;36m (master)[0m[0K
+[?25l$ g[0K[5G[?25h[4G[?25l$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git .[0K[?25h[9G[?25l$ git . a[0K[?25hd[0Kd[0K[?25l
+[0K[?25hgit: '.' is not a git command. See 'git --help'.[0K[?25l
+[0K
+The most similar commands are[0K
+        am[0K
+        gc[0K
+        mv[0K
+        p4[0K
+        rm[0K
+[0K[?25h[?25l
+[0;32mluist@LuisPC [0;35m [0;33m~/Desktop/UNI/3º/2 semestre/S.Inteliegentes/Projects/IS_RProjects[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git a[0K[?25hd[0Kd[0K-[0K[?25l$ git add[0K[?25h.[0K[?25l
+[0K[?25hgit: 'add.' is not a git command. See 'git --help'.[0K[?25l
+[0K
+The most similar command is[0K
+        add[0K
+[0K[?25h[?25l
+[0;32mluist@LuisPC [0;35m [0;33m~/Desktop/UNI/3º/2 semestre/S.Inteliegentes/Projects/IS_RProjects[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git a[0K[?25hd[0Kd[0K[11G[?25l$ git add .[0K[?25h[?25l
+[0K[?25hwarning: LF will be replaced by CRLF in .Rhistory.[0K[?25l
+The file will have its original line endings in your working directory[0K
+[0K[?25herror: open(".Rproj.user/284D8A53/console06/DF0F067E"): Permission denied[0K[?25l
+error: unable to index file .Rproj.user/284D8A53/console06/DF0F067E[0K
+fatal: updating files failed[0K
+[0K[?25h[?25l
+[0;32mluist@LuisPC [0;35m [0;33m~/Desktop/UNI/3º/2 semestre/S.Inteliegentes/Projects/IS_RProjects[0m[0K[1G[?25h[0;32mluist@LuisPC [0;35m [0;33m~/Desktop/UNI/3º/2 semestre/S.Inteliegentes/Projects/IS_RProjects[0;36m (master)[0m[0K[?25l
+$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git a[0K[?25hd[0Kd[0K[11G[?25l$ git add .[0K[?25h
