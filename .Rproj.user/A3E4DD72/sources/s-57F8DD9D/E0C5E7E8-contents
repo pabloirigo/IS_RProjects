@@ -1,0 +1,167 @@
+# =======================================================================
+# Names:Borja Valverde, Unai Jauregibeitia
+# Group Number: SI11
+# Assignment:Practica 2
+# Date:04-04-2019
+# =======================================================================
+# 1. Be sure to include, with this template, any necessary files
+#    for execution, including datasets (problem.R, methodXXX.R, ...)
+#    (submission of the entire template folder is recommended)
+# 2. If you use a function of a certain package, do not forget to include the
+#    corresponding call to the "library ()" function
+# 3. Do not forget to comment on the code, especially those non-trivial commands
+#    (remember that part of the rating depends on the cleaning of the code)
+# 4. It is strongly recommended to test any implemented function in order to 
+#    check for its proper operation
+# =======================================================================
+# (This is a general code, you must adapt it)
+# =======================================================================
+
+# This function must return a list with the information needed to 
+# solve the problem.
+# (Depending on the problem, it should receive or not parameters)
+initialize.problem = function(file, P){
+  problem = list()
+  #Lee la información desde un archivo externo y lo guarda como el estado inicial
+  problem$state.initial = read.csv(file, header = F, skip=2, dec=".", sep="")
+  #Inicializa las posibles acciones
+  problem$actions.possible = data.frame(direction=c("MoveAirport"), stringsAsFactors = F)
+  #Especifica el numero de filas del problema, teniendo en cuenta el tamaño de la matriz que se le pasa dentro del archivo
+  problem$rows = nrow(problem$state.initial)
+  #Especifica el numero de columnas del problema, teniendo en cuenta el tamaño de la matriz que se le pasa dentro del archivo
+  problem$columns = ncol(problem$state.initial)
+  #Aeropuertos principales totales
+  problem$total.airports = P
+  #Especifica el nombre del problema
+  problem$name = paste0("Aeropuertos - [",file,"]")
+  #Aeropuertos principales aleatorios asignados 
+  problem$P.airports = sample(1:problem$rows, problem$total.airports, replace=F)
+  #Lista de combinaciones de aeropuertos proncipales ya probados
+  problem$Pairports.combinations = list(problem$P.airports)
+  #Calcula el numero máximo de combinaciones posibles dado el numero de aeropuertos totales y el numero de aeropuertos principales a obtener
+  problem$Max.combinations = as.integer((factorial(problem$rows)/(factorial(problem$total.airports) * factorial(problem$rows - problem$total.airports))))
+  #Coste total
+  problem$Total.cost = 0
+  return(problem)
+}
+
+# =======================================================================
+# Must return TRUE or FALSE according with if the action can be done or not
+# over the specific state
+is.applicable = function (state,action,airports, Pairports){
+  #Obtiene el aeropuerto de origen y el de destino
+  airport.origin = airports[[1]]
+  airport.destine = airports[[2]]
+  #Comprueba que se puede ir del aeropuerto de origen al de destino, teniendo en cuenta si es Principal o de si va a uno Principal
+  if (action == "MoveAirport"){
+    result = airport.origin %in% Pairports || (!(airport.origin %in% Pairports) && airport.destine %in% Pairports)
+  }
+  
+  return(result)
+}
+#Comprueba si una lista esta contenida en otra lista
+conteins = function(list.to.check, list.where.check){
+  same<-FALSE
+  for(list in list.where.check){
+    if(all(list.to.check %in% list)){
+      same<-TRUE
+      break
+    }
+  }
+  return(same)
+}
+#Obtiene el aeropuero Principal más optimo para ir desde un aeropuerto secundario a otro secundario
+best.airport = function(state, Pairports, airportOrig, airportDest){
+  best.cost=-1
+  for( airport.p in Pairports){
+    if(best.cost==-1){
+      best.cost<-state[airportOrig, airport.p] + state[airport.p, airportDest]
+    }
+    else{
+      sum<-state[airportOrig, airport.p] + state[airport.p, airportDest]
+      if(sum<best.cost){
+        best.cost<-sum
+      }
+    }
+  }
+  return(best.cost)
+}
+# =======================================================================
+# Must return the state resulting on applying the action over the state
+effect = function (state, action, Pairports, Pairports.combinations, count, totalComb){
+  #Modifica el valor de la posicion actual y de la nueva a la que nos vamos a mover, actualizando el estado del jugador e indicamos que ya hemos pasado por la posición actual.
+  #Del mismo modo, actualizamos la posicion del jugador
+  if (action == "MoveAirport"){
+      i<-1
+      cost = 0
+      for(row in state){
+        j<-1
+        for(col in row){
+          if(i!=j){
+            if(i %in% Pairports || j %in% Pairports){
+              cost<-cost+state[i,j]
+            }
+            #Obtener aeropuerto principal mas cercano
+            else{
+              b.air<-best.airport(state, Pairports, i, j)
+              cost<-cost + b.air
+            }
+          }
+          j<- j + 1
+        }
+        i<- i + 1
+      }
+      if(count<totalComb){
+        new.pairports<-sample(1:problem$rows, problem$total.airports, replace=F)
+        while(conteins(new.pairports, Pairports.combinations)){
+          new.pairports<-sample(1:problem$rows, problem$total.airports, replace=F)
+        }
+      }
+      else{
+        new.pairports<-0
+      }
+  }
+  
+  Pairports.combinations<-append(Pairports.combinations,list(new.pairports))
+  ret.value <- list("cost" = cost, "Pairports" = Pairports, "New.Pairports" = new.pairports,  "Pairports.combinations" = Pairports.combinations)
+  #Devolvemos el coste total más óptimo
+  return(ret.value)
+}
+
+
+# =======================================================================
+# Must return TRUE or FALSE according with the state is final or not
+# * In case the final state is stablished by a condition, second argument
+#   could be omited
+#Comprueba que has llegado a el numero maximo de combinaciones posibles
+is.final.state = function (state, cont, airports.number){
+  result = FALSE
+  if(cont>problem$Max.combinations){
+    result = TRUE
+  }
+  return(result)
+}
+
+# =======================================================================
+# Must print the state in console (in a legible way)
+#Imprime el estado/mapa actual
+to.string = function (state){
+    cat("\n")
+    print(state)
+    cat("\n")
+}
+
+# =======================================================================
+# Return the cost of applying an action over a state
+get.cost = function (action,state){
+  # Return the cost of applying an action over a state
+  return(1)
+}
+
+# =======================================================================
+# (Used for Informed Algorithms)
+# Heuristic function used in Informed algorithms
+get.evaluation = function(state,problem){
+	return(1)
+}
+

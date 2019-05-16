@@ -1,8 +1,8 @@
 # =======================================================================
-# Names: Pablo Irigoyen, Luis Urrechaga
-# Group Number: B
-# Assignment: P-Hub
-# Date:
+# Names:Borja Valverde, Unai Jauregibeitia
+# Group Number: SI11
+# Assignment:Practica 2
+# Date:04-04-2019
 # =======================================================================
 # 1. Be sure to include, with this template, any necessary files
 #    for execution, including datasets (problem.R, methodXXX.R, ...)
@@ -24,29 +24,22 @@ setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 getwd()
 dir()
 
-# LIBRARIES (add any needed library here)
+# Librerias necesarias
 library(rstudioapi)
 library(ggplot2)
 library(gridExtra)
 
-# ADDITIONAL FUNCTIONS (add any used method/problem here)
-source("../problems/XXXXXXXXXX.R")
-source("../methods/YYYYYYYYYYY.R")
-
-# And here, there are additional (needed) functions
+# Funciones adicionales
+source("../problems/p-hub-SI11.R")
+source("../methods/hill-climbing-SI11.R")
 source("../methods/Expand Node.R")
 source("../methods/Analyze Results.R")
 source("../methods/Plot Results.R")
-# =======================================================================
-# Check the proper operation of implemented function here!
-
-
 
 # =======================================================================
-# Solving of the problem (you have to adapt it)
-problem   = initialize.problem("<ANY_PARAMETER_IF_NEEDED>")
-res1 = method.XXXX(problem,"<OTHER_PARAMETERS>")
-res2 = method.YYYY(problem,"<OTHER_PARAMETERS>")
-all = list(res1, res2)
-analyze.results(list(res1,res2),problem)
+# Solucion del problema
+problem   = initialize.problem("../data/AP40.txt", 2)
+res.HC = Hill.Climbing(problem, count.limit = problem$Max.combinations + 1)
+all = list(res.HC)
+analyze.results(list(res.HC),problem)
 
