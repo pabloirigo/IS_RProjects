@@ -20,15 +20,28 @@
 # This function must return a list with the information needed to 
 # solve the problem.
 # (Depending on the problem, it should receive or not parameters)
-initialize.problem = function(){
+initialize.problem = function(file, ){
   problem = list()
-  # problem$state.initial = <Insert code here>
-  # problem$state.final   = <Insert code here or remove line if not needed>
+   problem$mapaDistancias = read.csv(file, header=FALSE, skip=2, dec="", sep=" ")
+   problem$mainAirports = x3 <- sample(1:10, 3)
+   problem$state.initial = 
+   problem$state.final   = NULL
   # problem$actions.possible = <Insert code here>
   # problem$name = <Insert code here>
   # problem$<aditional info> = <Insert code here>
+   problem$numberAirports = 2
   return(problem)
 }
+get.principalAirports = function (){
+  m1 <- problem$mainAirports[1]
+  m2 <- problem$mainAirports[2]
+  
+  
+  initAirport <- sample(1:10, 1)
+  
+  
+}
+
 
 # =======================================================================
 # Must return TRUE or FALSE according with if the action can be done or not
