@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "0",
+    "hash" : "2919171295",
     "id" : "3560E48F",
-    "lastKnownWriteTime" : 1558025756,
-    "last_content_update" : 1558025756,
+    "lastKnownWriteTime" : 1558026496,
+    "last_content_update" : 1558026496806,
     "path" : "D:/4ºIng.Infor/2o_Semestre/IntelligentSystems/RLabs/IS_RProjects/The P-Hub/demos/main file template.R",
     "project_path" : "The P-Hub/demos/main file template.R",
     "properties" : {
-        "cursorPosition" : "16,31",
-        "scrollLine" : "13"
+        "cursorPosition" : "36,34",
+        "scrollLine" : "20"
     },
     "relative_order" : 2,
     "source_on_save" : false,

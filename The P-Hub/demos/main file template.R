@@ -44,7 +44,7 @@ source("../methods/Plot Results.R")
 
 # =======================================================================
 # Solving of the problem (you have to adapt it)
-problem   = initialize.problem("../data/phub_10.txt")
+problem   = initialize.problem("<ANY_PARAMETER_IF_NEEDED>")
 res1 = method.XXXX(problem,"<OTHER_PARAMETERS>")
 res2 = method.YYYY(problem,"<OTHER_PARAMETERS>")
 all = list(res1, res2)
