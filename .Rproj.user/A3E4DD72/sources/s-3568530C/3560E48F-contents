@@ -1,7 +1,7 @@
 # =======================================================================
-# Names:Luis Urrechaga, Pablo Irigoyen  
+# Names: Pablo Irigoyen, Luis Urrechaga
 # Group Number: B
-# Assignment:TheFeetMaze  
+# Assignment: P-Hub
 # Date:
 # =======================================================================
 # 1. Be sure to include, with this template, any necessary files
@@ -30,10 +30,8 @@ library(ggplot2)
 library(gridExtra)
 
 # ADDITIONAL FUNCTIONS (add any used method/problem here)
-source("../problems/problem TheFeetMaze.R")
-source("../methods/Breadth First Search.R")
-source("../methods/Depth First Search.R")
-#source("../methods/YYYYYYYYYYY.R")
+source("../problems/problem template.R")
+source("../methods/Hill Climber.R")
 
 # And here, there are additional (needed) functions
 source("../methods/Expand Node.R")
@@ -42,15 +40,10 @@ source("../methods/Plot Results.R")
 # =======================================================================
 # Check the proper operation of implemented function here!
 
-
-
 # =======================================================================
 # Solving of the problem (you have to adapt it)
-#problem = initialize.problem("../data/map.txt", "../data/map_Up.txt", "../data/map_Down.txt", "../data/map_Right.txt", "../data/map_Left.txt")
-problem = initialize.problem("../data/map.csv", "../data/map_Up.csv", "../data/map_Down.csv", "../data/map_Right.csv", "../data/map_Left.csv")
-print(problem)
-res1 = Breadth.First.Search(problem, count.limit = 1000, graph.search = T) 
-res2 = Depth.First.Search(problem,count.limit = 10000, graph.search = T)
-all = list(res1, res2)
-analyze.results(list(res1,res2),problem)
+problem   = initialize.problem("../data/phub_40.txt", 2)
+res = Hill.Climber(problem, count.limit = problem$maxCombinations + 1)
+all = list(res)
+analyze.results(list(res),problem)
 

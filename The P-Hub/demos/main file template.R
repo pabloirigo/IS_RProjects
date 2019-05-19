@@ -30,8 +30,8 @@ library(ggplot2)
 library(gridExtra)
 
 # ADDITIONAL FUNCTIONS (add any used method/problem here)
-source("../problems/XXXXXXXXXX.R")
-source("../methods/YYYYYYYYYYY.R")
+source("../problems/problem template.R")
+source("../methods/Hill Climber.R")
 
 # And here, there are additional (needed) functions
 source("../methods/Expand Node.R")
@@ -40,13 +40,10 @@ source("../methods/Plot Results.R")
 # =======================================================================
 # Check the proper operation of implemented function here!
 
-
-
 # =======================================================================
 # Solving of the problem (you have to adapt it)
-problem   = initialize.problem("<ANY_PARAMETER_IF_NEEDED>")
-res1 = method.XXXX(problem,"<OTHER_PARAMETERS>")
-res2 = method.YYYY(problem,"<OTHER_PARAMETERS>")
-all = list(res1, res2)
-analyze.results(list(res1,res2),problem)
+problem   = initialize.problem("../data/phub_40.txt", 2)
+res = Hill.Climber(problem, count.limit = problem$maxCombinations + 1)
+all = list(res)
+analyze.results(list(res),problem)
 
